@@ -33,3 +33,19 @@ that is an obtuse triangle
 
 
 """
+
+a = float(input("Enter one side: "))
+
+b = float(input("Enter a second side: "))
+
+c = float(input("Enter third side: "))
+
+h = float
+
+if a > b and c:
+    a = h
+elif b > a and c:
+    b = h
+elif c > a and c:
+    c = h
+
