@@ -33,6 +33,8 @@ that is an obtuse triangle
 
 
 """
+import math
+
 
 a = float(input("Enter one side: "))
 
