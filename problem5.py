@@ -29,3 +29,27 @@ Enter c: 8
 the equation can not be factored
 
 """
+import math
+
+a = float(input("Enter number for a: "))
+
+b = float(input("Enter number for b: "))
+
+c = float(input("Enter number for c: "))
+
+x = (math.pow(b,2) - 4*a*c)
+
+if x < 0:
+    print("the discriminant can not be negative")
+    exit()
+
+answer = float(math.sqrt(x))
+
+
+if answer == round(answer,0):
+    print("the equation can be factored")
+else:
+    print("the equation can not be factored")
+
+#done
+

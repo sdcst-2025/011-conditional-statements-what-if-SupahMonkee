@@ -42,12 +42,36 @@ b = float(input("Enter a second side: "))
 
 c = float(input("Enter third side: "))
 
-h = float
 
 if a > b and c:
-    a = h
+    h = a
+    s1 = b
+    s2 = c
 elif b > a and c:
-    b = h
-elif c > a and c:
-    c = h
+    h = b
+    s1 = a
+    s2 = c
+elif c > a and b:
+    h = c
+    s1 = a
+    s2 = b
 
+
+hexpected = math.pow(s1,2) + math.pow(s2,2)
+
+hactual = math.pow(h,2)
+lower = hexpected - (hexpected*0.02)
+upper = hexpected + (hexpected*0.02)
+
+
+if hexpected == hactual:
+    print("that is a right triangle")
+elif lower < hactual < upper:
+    print("that is a right triangle")
+elif math.pow(s1,2) + math.pow(s2,2) > math.pow(h,2):
+    print("that is a acute triangle")
+elif math.pow(s1,2) + math.pow(s2,2) < math.pow(h,2):
+    print("that is a obtuse triangle")
+
+
+#done
